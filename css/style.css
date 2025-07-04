@@ -34,3 +34,22 @@ hr {
 ::selection {
     background: rgba(220, 220, 220);
 }
+
+a.btn {
+  display: inline-block;
+  background-color: #b7c7d8;
+  color: black;
+  text-decoration: none;
+  padding: 4px 12px;
+  margin: 4px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+a.btn:hover {
+  background-color: rgb(153, 184, 217);
+  color: black; /* Keep text white on hover */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}

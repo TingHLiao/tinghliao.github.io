@@ -6,19 +6,25 @@
 	<title>Ting-Hsuan Liao's Homepage</title>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- <script defer src="js/fontawesome.min.js"></script> -->
+  <link href="asset/css/fontawesome.css" rel="stylesheet" />
+  <link href="asset/css/brands.css" rel="stylesheet" />
+  <link href="asset/css/solid.css" rel="stylesheet" />
+  <link href="asset/css/sharp-thin.css" rel="stylesheet" />
+  <link href="asset/css/duotone-thin.css" rel="stylesheet" />
+  <link href="asset/css/sharp-duotone-thin.css" rel="stylesheet" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/copy.js"></script>
 </head>
 
 <div class="header">
-    <div class="container">
+    <div class="container" style="width: 75%;">
 		<div class="row align-items-center">
 			<div class="col-md-4 align-column-center">
 				<center>
-					<img class="img-fluid" src="files/Ting_Hsuan_Liao.JPG" width="50%" alt=""><br>
+					<img class="img-fluid" src="files/Ting_Hsuan_Liao.JPG" width="60%" alt=""><br>
 				</center>
 			</div>
 			<div class="col-md-8 align-column-center">
@@ -30,17 +36,17 @@
                 I received my Bachelor's degrees from National Tsing Hua University advised by Prof. <a href="https://elsalab.ai/about">Chun-Yi Lee</a>. 
                 My research interest is mainly in Computer Vision. I'm now working on generative model and 3D generation.
                 </p>
-                <a target="_blank" href="https://tinghliao.github.io/files/Resume.pdf">[CV]</a>
-                <a href="#publication">[Publications]</a>
-                <a target="_blank" href="https://github.com/TingHLiao">[GitHub]</a>
-                <a target="_blank" href="https://scholar.google.com/citations?user=1xeyYoEAAAAJ&hl=en&authuser=4">[Google Scholar]</a>
-                <a target="_blank" href="https://twitter.com/TingHsuan1129">[Twitter]</a>
+                <a class="btn" href="https://tinghliao.github.io/files/Resume.pdf"><i class="fa-solid fa-file-lines"></i>&nbsp CV</a>
+                <a class="btn" href="https://scholar.google.com/citations?user=1xeyYoEAAAAJ&hl=en&authuser=4"><i class="fa-brands fa-google"></i>&nbsp Google Scholar</a>
+                <a class="btn" href="https://www.linkedin.com/in/tinghliao/"><i class="fa-brands fa-linkedin"></i>&nbsp Linkedin</a>
+                <a class="btn" href="https://github.com/TingHLiao"><i class="fa-brands fa-github"></i>&nbsp GitHub</a>
+                <a class="btn" onclick="copyEmail(this)" onmouseover="hoverEmail(this)" onmouseleave="leaveEmail(this)"><i class="fa-solid fa-envelope"></i>&nbsp Email</a>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container" style="width: 75%;">
+<div class="container" style="width: 65%;">
 	<h3> Education </h3>
     <div class="row-fluid marketing">
         <div class="row">
@@ -65,33 +71,34 @@
 
 </div>
 </br></br>
-<div class="container" style="width: 75%;">
+<div class="container" style="width: 65%;">
 	<!-- publications come here -->
 	<h3> Publications </h3>
 	<font size="3">(*indicates equal contribution)</font>
 	<div class="gap-20"></div>
 
   <div class="row align-items-center">
-		<div class="col-md-3">
-			<img class="img-fluid " src="files/cvpr25.mov" style="border:0px solid black" alt="">
+		<div class="col-md-4">
+			<img class="img-fluid " src="files/cvpr25.mp4" style="border:0px solid black" alt="">
 		</div>
-		<div class="col-md-9">
+		<div class="col-md-8">
 			<font size="4"> <b> Shape My Moves: Text‑Driven Shape‑Aware Synthesis of Human Motions </b></font><br>
 			<font size="3">
 				<b>Ting‐Hsuan Liao</b>, Yi Zhou, Yu Shen, Chun‑Hao Paul Huang, Saayan Mitra, Jia‑Bin Huang, Uttaran Bhattacharya<br>
         To appear in the <i> Computer Vision and Pattern Recognition (CVPR), 2025  <font color="#DC143C"></font></i><br>
 				<a href="http://arxiv.org/abs/2504.03639" target="_blank"> [Paper] </a>
 				<a href="https://shape-move.github.io" target="_blank"> [Project Page] </a>
+        <!-- <a href="https://github.com/adobe-research/ShapeMove" target="_blank"> [Code] </a> -->
 			</font>
 		</div>
   </div>
   <hr>
 
   <div class="row align-items-center">
-		<div class="col-md-3">
-			<img class="img-fluid " src="files/arxiv23.mov" style="border:0px solid black" alt="">
+		<div class="col-md-4">
+			<img class="img-fluid " src="files/arxiv23.mp4" style="border:0px solid black" alt="">
 		</div>
-		<div class="col-md-9">
+		<div class="col-md-8">
 			<font size="4"> <b> Text-driven Visual Synthesis with Latent Diffusion Prior </b></font><br>
 			<font size="3">
 				<b>Ting‐Hsuan Liao</b>, Songwei Ge, Yiran Xu, Yao-Chih Lee, Badour AlBahar, Jia-Bin Huang<br>
@@ -104,10 +111,10 @@
   <hr>
 
     <div class="row align-items-center">
-		<div class="col-md-3">
+		<div class="col-md-4">
 			<img class="img-fluid " src="files/bmvc22.png" style="border:0px solid black" alt="">
 		</div>
-		<div class="col-md-9">
+		<div class="col-md-8">
 			<font size="4"> <b> ELDA: Using Edges to Have an Edge on Semantic Segmentation Based UDA </b></font><br>
 			<font size="3">
 				<b>Ting‐Hsuan Liao*</b>, Huang‐Ru Liao*, Shan‐Ya Yang, Jie‐En Yao, Li‐Yuan Tsao, Hsu‐Shen Liu, Chen‐Hao Chao, Bo‐Wun Cheng, Chia‐Che Chang, Yi‐Chen Lo, Chun‐Yi Lee<br>
@@ -120,10 +127,10 @@
 	 <hr>
 
    <div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
+		<div class="col-md-4 align-column-center">
 			<img class="img-fluid " src="files/wacv22.png" style="border:0px solid black" alt="">
 		</div>
-		<div class="col-md-9">
+		<div class="col-md-8">
 			<font size="4"> <b> Pixel‐Wise Prediction based Visual Odometry via Uncertainty Estimation </b></font><br>
 			<font size="3">
 				Hao‐Wei Chen, <b>Ting‐Hsuan Liao</b>, Hsuan‐Kung Yang, Chun‐Yi Lee<br>
@@ -135,10 +142,10 @@
 	<hr>
 
     <div class="row align-items-center">
-		<div class="col-md-3">
+		<div class="col-md-4">
 			<video playsinline autoplay loop muted src="files/IROS22.mp4" width="98%" style="border-radius:10px;"></video>
 		</div>
-		<div class="col-md-9">
+		<div class="col-md-8">
 			<font size="4"> <b> Investigation of Factorized Optical Flows as Mid‐Level Representations</b></font><br>
 			<font size="3">
 				Hsuan‐Kung Yang, Tsu‐Ching Hsiao, <b>Ting‐Hsuan Liao</b>, Hsu‐Shen Liu, Li‐Yuan Tsao, Tzu‐Wen Wang, Shan‐Ya Yang, Yu‐Wen Chen, Huang‐Ru Liao, Chun‐Yi Lee<br>
@@ -154,7 +161,7 @@
 
 </div>
 </br></br>
-<div class="container" style="width: 75%;">
+<div class="container" style="width: 65%;">
 	<h3> Experience </h3>
 
   <div class="row-fluid marketing">
