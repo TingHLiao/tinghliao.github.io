@@ -53,3 +53,16 @@ a.btn:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   text-decoration: none;
 }
+
+.conf {
+	display: inline-block;
+	font-style: italic;
+	color: black;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.pub {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
