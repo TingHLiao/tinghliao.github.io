@@ -1,14 +1,24 @@
 body {
-	margin-top: 30px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+	/* margin-top: 30px;  */
+  font-family: 'Lato', sans-serif;
 }
 .header {
     width: auto;
     max-width: auto;
-    font-family: Arial;
+    font-family: 'Lato', sans-serif;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     background-color: rgba(250, 250, 250)
   }
+
+.footer {
+  width: auto;
+  max-width: auto;
+  font-family: Arial;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: rgba(250, 250, 250, 0.771)
+}
 
 a:link,a:visited {
     color: #0071bc;
@@ -65,4 +75,18 @@ a.btn:hover {
 .pub {
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+
+.school-fig {
+  height: 70px;
+  width: 70px;
+  /* object-fit: cover; */
+  /* border-radius: 50%; */
+  /* overflow: hidden; */
+}
+
+
+.edu {
+  font-size: 14px;
+	color: #557e84;
 }
