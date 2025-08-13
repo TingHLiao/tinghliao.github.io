@@ -3,12 +3,12 @@ var btn_text_hover = "Copy email";
 var btn_text_copied = "Copied email!";
 var is_copied = false;
 
-document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.getElementById("emailBtn");
-  btn.addEventListener("click", function() { copyEmail(btn); });
-  btn.addEventListener("mouseover", function() { hoverEmail(btn); });
-  btn.addEventListener("mouseleave", function() { leaveEmail(btn); });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const btn = document.getElementById("emailBtn");
+//   btn.addEventListener("click", function() { copyEmail(btn); });
+//   btn.addEventListener("mouseover", function() { hoverEmail(btn); });
+//   btn.addEventListener("mouseleave", function() { leaveEmail(btn); });
+// });
 
 function hoverEmail(btn) {
   btn.innerHTML = btn.innerHTML.replace(btn_text_default, btn_text_hover).replace(btn_text_copied, btn_text_default);
